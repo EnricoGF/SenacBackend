@@ -1,0 +1,4 @@
+//npm install -g readline-sync
+//npm install -g typescript
+//npx tsc nomeDoArquivo.ts
+//node nomeDoArquivo.js
