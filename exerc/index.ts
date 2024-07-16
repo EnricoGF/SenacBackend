@@ -55,16 +55,7 @@ let precoTotalCarrinho:number = 0
 function verCarrinho():void{
     carrinhoDeCompras.forEach((item, index) => {
         console.log(`${index+1}. Produto: ${item.nome}, Tipo: ${item.tipo}, Preco: ${item.getPreco()}`)
-    });
-
-    /* let tamanhoCarrinho = carrinhoDeCompras.length()
-    let valorTotalCarrinho:number = 0
-
-    for(let cont:number = 0; cont < tamanhoCarrinho; cont++){
-        let calcularValorCarrinho:number = carrinhoDeCompras[cont].getPreco()
-        valorTotalCarrinho += calcularValorCarrinho
-    }
-    console.log(`Valor total:${valorTotalCarrinho}`) */
+    })
 
     for (let itemLista of carrinhoDeCompras){
         let calculaPrecoCarrinho:number = itemLista.getPreco()
