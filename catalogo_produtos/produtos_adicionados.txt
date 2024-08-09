@@ -1,0 +1,35 @@
+//POST
+{
+  "nome": "Banana Terra",
+  "descricao": "Fruta",
+  "preco": 6.59
+}
+
+{
+  "nome": "Camisa Branca",
+  "descricao": "Vestuario",
+  "preco": 49.90
+}
+
+{
+  "nome": "Chocolate Ao Leite",
+  "descricao": "Comida",
+  "preco": 10.99
+}
+
+{
+  "nome": "Camisa Azul",
+  "descricao": "Vestuario",
+  "preco": 63.90
+}
+
+//PUT
+{
+  "nome": "Camisa Azul",
+  "descricao": "Vestuario",
+  "preco": 56.90
+}
+
+//DELETE
+http://localhost:3000/produtos/3
+http://localhost:3000/produtos/4
