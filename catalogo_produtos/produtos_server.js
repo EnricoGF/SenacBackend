@@ -54,6 +54,9 @@ app.get('/produtos/:id', (req, res) => {
       res.status(500).send('Erro ao obter produto.');
       return;
     }
+    else if (results.length === 0){
+      res.status(404).send('Produto não encontrado')
+    }
     res.json(results[0]);
   });
 });
