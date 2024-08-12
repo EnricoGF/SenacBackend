@@ -31,6 +31,10 @@ app.post('/produtos', (req, res) => {
       res.status(500).send('Erro ao adicionar produto.');
       return;
     }
+    //Validação para garantir que todos os campos foram preenchidos
+    else if(!nome || !descricao || !preco == false){
+      res.status(400).send('Todos os campos precisam ser preenchidos')
+    }
     res.status(201).send('Produto adicionado com sucesso.');
   });
 });
@@ -54,6 +58,7 @@ app.get('/produtos/:id', (req, res) => {
       res.status(500).send('Erro ao obter produto.');
       return;
     }
+    //Validação para verificar se há pelo menos 1 resultado, senão retorna erro
     else if (results.length === 0){
       res.status(404).send('Produto não encontrado')
     }
